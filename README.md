@@ -1,7 +1,8 @@
-# Optimal-er Auctions through Attention
+# [Optimal-er Auctions through Attention](https://arxiv.org/abs/2202.13110)
 **Dmitry Ivanov, Iskander Safiulin, Igor Filippov, Ksenia Balabaeva**
 
 *RegretNet is a recent breakthrough in the automated design of revenue-maximizing auctions. It combines the flexibility of deep learning with the regret-based approach to relax the Incentive Compatibility (IC) constraint (that participants prefer to bid truthfully) in order to approximate optimal auctions. We propose two independent improvements of RegretNet. The first is a neural architecture denoted as RegretFormer that is based on attention layers. The second is a loss function that requires explicit specification of an acceptable IC violation denoted as regret budget. We investigate both modifications in an extensive experimental study that includes settings with constant and inconstant number of items and participants, as well as novel validation procedures tailored to regret-based approaches. We find that RegretFormer consistently outperforms RegretNet in revenue (i.e. is *optimal-er*) and that our loss function both simplifies hyperparameter tuning and allows to unambiguously control the revenue-regret trade-off by selecting the regret budget.*
+
 
 This is the official implementation of RegretFormer and the budget-based training procedure in PyTorch. The repository contains the code necessary to reproduce all experiments from the paper, including implementations of the existing architectures RegretNet (Dutting et al., 2019) and EquivariantNet (Rahme et al., 2021). Note that these architectures are also trained with the proposed budget-based procedure, as opposed to the original procedure where the Lagrange coefficients are hand-selected.
 
